@@ -1,7 +1,7 @@
 from scapy.all import ARP, sr1, Ether
 import os
 import time
-#********************************Obtener automatica la dirección IP******************************
+#********************************Obtener automaticamente la dirección IP******************************
 def get_router_ip():
     
     result = os.popen("ip route | grep default").read().strip()
